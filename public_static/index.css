@@ -1,0 +1,247 @@
+/* This css file is for index.pug or index.html */
+
+/* Imported Font style from Google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&family=Rubik+Moonrocks&family=Rubik+Microbe&display=swap');
+
+/* css reset '*' selector */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* padding and border are included in the width and height */
+}
+
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-right: 50px;
+    /* font-family: 'Rubik Moonrocks',cursive; */
+    font-family: 'Rubik Microbe', cursive;
+}
+
+#logo img {
+    height: 45px;
+    width: 45px;
+    filter: invert(1);
+}
+
+
+#navbar {
+    background-color: rgba(106, 49, 150);
+    padding: 5px 0px;
+    font-family: 'Yeon Sung', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul {
+    /* to put the li in row and centre */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 14px 15px;
+    margin: 0px 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar li a:hover {
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+    border-radius: 15px;
+    box-shadow: -1px -1px 2px rgb(206, 172, 232);
+}
+
+
+#introSection {
+    height: 79vh;
+    /* background: center / contain no-repeat url("/public_static/bg.jpg"); */
+    background: url("/public_static/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    color: white;
+
+    /* to put the content/text in the centre of introSection box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* to put the div in column */
+
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 35px;
+
+    /* to take the content/divs to the top side from center */
+    padding-bottom: 96px;
+}
+
+div#intro {
+    font-size: 29px;
+    margin-top: 15px;
+}
+
+
+#missionSection {
+    /* height: 350px; */
+    /* background-color: rgba(138, 17, 230, 0.701); */
+
+    /* trying to do as i have done sponser section */
+    /* display: flex;
+    flex-direction: row; */
+
+    /* to center our card and adjust .card width and margin */
+    /* display: block; */
+    /* width: 90%; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.h2 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 32px;
+}
+
+.card {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 15px 24px;
+    box-shadow: 1px 1px 3px black;
+    padding-bottom: 10px;
+    height: 273px;
+}
+
+.card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px 10px;
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+.card-img {
+    height: 116px;
+    padding: 0px 14px;
+    margin: 2px 6px;
+}
+
+.card-img img {
+    height: inherit;
+    /* .card-img height is inherit */
+}
+
+.card-content {
+    /* margin-right: 5px; */
+    padding: 0px 10px;
+}
+
+.card-content p {
+    font-size: 23px;
+    text-align: justify;
+}
+
+
+
+#sponsorsSection {
+    /* height: 350px; */
+    background-color: rgba(107, 49, 151, 0.701);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sponsorsSection h2 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 32px;
+}
+
+#sponsorsSection .div {
+    /* border: 2px solid black; */
+    width: 40%;
+    /* height: 86%; */
+    background-color: rgb(236 235 242 / 24%);
+    margin: 20px 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px black;
+}
+
+#sponsorsSection #div1 {
+    margin-right: 77px;
+    margin-left: 57px;
+}
+
+
+#sponsors {
+    height: 120px;
+    max-width: 1000px;
+    margin: 62px auto;
+}
+
+.spImage {
+    /* height: 70px; */
+    margin: 0 20px;
+}
+
+
+#footer {
+    height: 50px;
+    background-color: rgb(66, 77, 78);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+/* Creating and designing a burger*/
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
+}
+

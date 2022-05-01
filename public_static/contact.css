@@ -1,0 +1,49 @@
+.container{
+    min-height: 74.4vh;
+    margin: 37px 0px
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0px;
+    font-family: 'Yeon Sung',cursive;
+    font-size: 34px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myInput{
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 15px;
+    border: 2px solid rgba(107, 49, 151, 0.701);
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(16, 15, 15, 0.64);
+    outline: none; /* removes black border while selected */
+}
+
+.btn{
+    display: block;
+    padding: 7px 15px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 15%;
+    margin: 10px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(107, 49, 151);
+    color: white;
+    outline: 1px solid rgb(14, 95, 236);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: 1px -1px 2px black;
+    box-shadow: 2px 2px 7px rgba(16, 15, 15, 0.64);
+    font-family: 'Yeon Sung',cursive;
+}
